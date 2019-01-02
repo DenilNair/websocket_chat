@@ -31,12 +31,11 @@ socket.on('chat',function(data){
 	var con='container';
 	
 	console.log("own socket");
-	console.log(socket.id);
-	console.log("other socket");
-	console.log(data.sock);
-
-	if(socket.id==data.sock){
+	console.log("Socket ID ",socket.id);
+	console.log("Other socket");
 	
+	if(socket.id==data.sock){
+	console.log("You only send data");
 		//console.log(flag);
 		var d=new Date();
 		console.log(d.toLocaleTimeString());
@@ -44,7 +43,7 @@ socket.on('chat',function(data){
 	output.innerHTML+='<div class='+con+'><p><strong>'+data.handle+':</strong>'+data.message+'<span class="time-right">'+t1+'</span></p></div>';
 
 }
-else{
+else{console.log("Message from socket ID ",data.sock);
 		var d=new Date();
 		console.log(d.toLocaleTimeString());
 		var t1=d.toLocaleTimeString();
