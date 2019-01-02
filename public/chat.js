@@ -1,5 +1,5 @@
 //make coonection
-let socket=io.connect('http://localhost:4000');
+let socket=io.connect('https://glacial-peak-19207.herokuapp.com/');
 console.log(socket.id);
 //Query DOm
 var message =document.getElementById('message');
