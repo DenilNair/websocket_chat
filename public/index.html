@@ -4,6 +4,14 @@
 	<title>Web Socket</title>
 	<link rel="stylesheet" type="text/css" href="/styles.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<h1>Chatting app</h1>
@@ -11,9 +19,11 @@
 		<div id="chat-window">
 			<div id="output"></div>
 		</div>
-		<input type="text" id="handle" placeholder="Handle" />
-		<input type="text" id="message" placeholder="Message"/>
-		<button id="send" >Send</button>
+		 <div class="form-group">
+		<input type="text" id="handle" class="form-control"  placeholder="User Name" />
+		<input type="text" id="message" class="form-control"  placeholder="Message"/>
+		<button id="send" class="btn btn-default">Send</button>
+		</div>
 	</div>
 	<script src="/chat.js"></script>
 
