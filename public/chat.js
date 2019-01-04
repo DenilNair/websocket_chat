@@ -6,7 +6,7 @@ var message =document.getElementById('message');
 var  handle=document.getElementById('handle');
 var btn=document.getElementById('send');
 var output=document.getElementById('output');
-
+document.getElementById('message').value="";
 
 
 
