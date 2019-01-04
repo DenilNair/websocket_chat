@@ -16,26 +16,16 @@
 <body>
 	<h1 class="text-white-50 bg-dark">Chatting app</h1>
 	<div id="mario-chat">
-		
+		<div id="chat-window">
+			<div id="output"></div>
+		</div>
 		 <div class="form-group">
 		<input type="text" id="handle" class="form-control"  placeholder="User Name" />
 		<input type="text" id="message" class="form-control"  placeholder="Message"/>
-		<button  type="submit" id="send" class="btn btn-default" onclick="Calling()">Send</button>
+		<button  type="submit" id="send" class="btn btn-default">Send</button>
 		</div>
 	</div>
-	<script type="text/javascript">
-	function Calling(){
-
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = "chat.js"; 
-    document.getElementsByTagName("head")[0].appendChild(script);
-   
-
-}
-	</script>
-
-	
+	<script src="/chat.js"></script>
 
 </body>
 </html>
